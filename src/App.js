@@ -5,6 +5,7 @@ import HelloClassComponent from './components/02.ComponentsAndProps/HelloClassCo
 import HelloFunctionComponent from './components/02.ComponentsAndProps/HelloFunctionComponent';
 import Comment from './components/02.ComponentsAndProps/comment/Comment';
 import UserInfo from './components/02.ComponentsAndProps/comment/UserInfo';
+import ClockFunctionComponent from './components/03.StateAndLifeCycle/ClockFunctionComponent';
 
 
 const comment = {
@@ -19,15 +20,19 @@ const comment = {
 function App() {
   return (
     <div className="App">
+
+
+      {/* Hooks useState and useEffect, */}
+      <ClockFunctionComponent />
       
       {/* Components and props */}
-      <Comment
+      {/* <Comment
         date={comment.date}
         text={comment.text}
         author={comment.author}
       />
 
-      <UserInfo user={comment.author}/>
+      <UserInfo user={comment.author}/> */}
 
 
       {/* <HelloFunctionComponent student="Julian" />
