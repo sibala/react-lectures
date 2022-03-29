@@ -10,6 +10,7 @@ import FunctionClickEvent from './components/04.HooksWithEvents/FunctionClickEve
 import CounterWithHooks from './components/04.HooksWithEvents/CounterWithHooks';
 import CounterWithHooks2 from './components/04.HooksWithEvents/CounterWithHooks2';
 import Login from './components/05.ConditionAndPassingUpProps/Login';
+import Blog from './components/06.ListsAndKeys/Blog';
 
 
 const comment = {
@@ -24,10 +25,12 @@ const comment = {
 function App() {
   return (
     <div className="App">
+      {/* Lists and keys */}
+      <Blog />
 
 
       {/* Condition And Passing Up Props */}
-      <Login />
+      {/* <Login /> */}
 
 
       {/* Hooks and events */}
