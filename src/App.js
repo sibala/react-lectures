@@ -6,6 +6,9 @@ import HelloFunctionComponent from './components/02.ComponentsAndProps/HelloFunc
 import Comment from './components/02.ComponentsAndProps/comment/Comment';
 import UserInfo from './components/02.ComponentsAndProps/comment/UserInfo';
 import ClockFunctionComponent from './components/03.StateAndLifeCycle/ClockFunctionComponent';
+import FunctionClickEvent from './components/04.HooksWithEvents/FunctionClickEvent';
+import CounterWithHooks from './components/04.HooksWithEvents/CounterWithHooks';
+import CounterWithHooks2 from './components/04.HooksWithEvents/CounterWithHooks2';
 
 
 const comment = {
@@ -21,9 +24,15 @@ function App() {
   return (
     <div className="App">
 
+      {/* Hooks and events */}
+      <CounterWithHooks2 />
+      {/* <CounterWithHooks /> */}
+      {/* <FunctionClickEvent /> */}
+
+
 
       {/* Hooks useState and useEffect, */}
-      <ClockFunctionComponent />
+      {/* <ClockFunctionComponent /> */}
       
       {/* Components and props */}
       {/* <Comment
