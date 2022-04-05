@@ -11,6 +11,8 @@ import CounterWithHooks from './components/04.HooksWithEvents/CounterWithHooks';
 import CounterWithHooks2 from './components/04.HooksWithEvents/CounterWithHooks2';
 import Login from './components/05.ConditionAndPassingUpProps/Login';
 import Blog from './components/06.ListsAndKeys/Blog';
+import FormsWithHooksBasics from './components/07.Forms/FormsWithHooksBasics';
+import RegisterForm from './components/07.Forms/RegisterForm';
 
 
 const comment = {
@@ -25,8 +27,14 @@ const comment = {
 function App() {
   return (
     <div className="App">
+
+      {/* Form with hooks */}
+      <RegisterForm />
+      {/* <FormsWithHooksBasics /> */}
+
+
       {/* Lists and keys */}
-      <Blog />
+      {/* <Blog /> */}
 
 
       {/* Condition And Passing Up Props */}
