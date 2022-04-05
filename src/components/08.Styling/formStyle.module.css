@@ -1,0 +1,9 @@
+/* CSS module */
+.error {
+    width: 100%;
+    border: 1px solid red;
+    background-color: pink;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 2em;
+}

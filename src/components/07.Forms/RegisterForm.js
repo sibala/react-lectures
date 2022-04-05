@@ -1,5 +1,8 @@
 import userEvent from '@testing-library/user-event'
 import React, {useState} from 'react'
+import './formStyle.css'; // Import Regular CSS
+import formStyles from './formStyle.module.css'; // Import CSS module CSS
+
 
 function RegisterForm() {
     // const [firstname, setFirstname] = useState('');
@@ -110,10 +113,17 @@ function RegisterForm() {
      * for a complete solution including validation, keeping track of the visited fields, andd handling form submissions
      */
     return (
-        <div>
-            <h1>Register here.</h1>
+        <div id="register-form-wrapper">
+            <h1>Register form.</h1>
 
             <form onSubmit={handleSubmit}>
+                <div className="messages">
+                    {/* Regular stylesheet */}
+                    <p className="success">Success message, (Styled with regular stylesheet)</p>
+                    {/* CSS modules */}
+                    <p className={formStyles.error}>Error message, (Styled with CSS modules)</p>
+                </div>
+
                 <label>First name: </label>
                 <input type="text" name="firstname" value={user.firstname} onChange={handleChange} />
 

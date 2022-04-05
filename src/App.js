@@ -13,6 +13,7 @@ import Login from './components/05.ConditionAndPassingUpProps/Login';
 import Blog from './components/06.ListsAndKeys/Blog';
 import FormsWithHooksBasics from './components/07.Forms/FormsWithHooksBasics';
 import RegisterForm from './components/07.Forms/RegisterForm';
+import RegisterFormWithStyling from './components/08.Styling/RegisterFormWithStyling';
 
 
 const comment = {
@@ -28,8 +29,11 @@ function App() {
   return (
     <div className="App">
 
+      {/* Styling */}
+      <RegisterFormWithStyling />
+
       {/* Form with hooks */}
-      <RegisterForm />
+      {/* <RegisterForm /> */}
       {/* <FormsWithHooksBasics /> */}
 
 
