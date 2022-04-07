@@ -14,6 +14,7 @@ import Blog from './components/06.ListsAndKeys/Blog';
 import FormsWithHooksBasics from './components/07.Forms/FormsWithHooksBasics';
 import RegisterForm from './components/07.Forms/RegisterForm';
 import RegisterFormWithStyling from './components/08.Styling/RegisterFormWithStyling';
+import PostList from './components/09.Ajax/PostList';
 
 
 const comment = {
@@ -29,8 +30,11 @@ function App() {
   return (
     <div className="App">
 
+      {/* AJAX */}
+      <PostList />
+
       {/* Styling */}
-      <RegisterFormWithStyling />
+      {/* <RegisterFormWithStyling /> */}
 
       {/* Form with hooks */}
       {/* <RegisterForm /> */}
